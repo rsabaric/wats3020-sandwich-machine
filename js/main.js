@@ -49,7 +49,7 @@ let prices = {
 
 let meatArray = meatOrder.split(',');
 let toppingArray = toppingsOrder.split(',');
-let condimentArray = condimentsOrder.spilt(',');
+let condimentArray = condimentsOrder.split(',');
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
