@@ -29,7 +29,7 @@ let meatOrder = prompt('What kind of meat would you like? (Separate multiple mea
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
 
-let condimentsOrder = prompt ('What sort of condiments would you like?'(Separate multiple toppings with a comma.)');
+let condimentsOrder = prompt ('What sort of condiments would you like? (Separate multiple toppings with a comma.)');
 
 // Step Two ////////////////////////////////////////////////////////////
 //
