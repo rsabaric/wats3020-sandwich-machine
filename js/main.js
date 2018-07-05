@@ -23,7 +23,7 @@ let meatOrder = prompt('What kind of meat would you like? (Separate multiple mea
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
  
- let toppingsOrder = prompt ('What toppings would you like?' (Separate multiple toppings with a comma.)');
+ let toppingsOrder = prompt ('What toppings would you like? (Separate multiple toppings with a comma.)');
 
 
 // TODO: Prompt the user for what kind of condiments they would like.
@@ -58,7 +58,7 @@ let condimentArray = condimentsOrder.spilt(',');
 
 let meatCost = meatArray.length * prices.meat;
 let toppingCost = toppingArray.length * prices.topping;
-let condimentCost = condimentArray.length *prices.condiment;
+let condimentCost = condimentArray.length * prices.condiment;
 
 // TODO: Combine the costs of each part of the sandwich to get the subtotal.
 let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
