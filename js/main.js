@@ -58,7 +58,7 @@ let condimentArray = condimentsOrder.spilt(',');
 
 let meatCost = meatArray.length * prices.meat;
 let toppingCost = toppingArray.length * prices.topping;
-let condimentCost = condimentArray.length * prices.condiment;
+let condimentCost = condimentArray.length *prices.condiment;
 
 // TODO: Combine the costs of each part of the sandwich to get the subtotal.
 let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
