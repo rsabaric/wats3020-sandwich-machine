@@ -11,11 +11,11 @@
 
 let breadOrder = prompt('What kind of bread would you like? (white, wheat,or flat)','wheat');
 
-let meatOrder = prompt('What kind of meat would you like? (Separate multiple meats with a comma.)');
+let meatOrder = prompt('What kind of meat would you like? (Separate multiple meats with a comma)');
  
-let toppingsOrder = prompt ('What toppings would you like? (Separate multiple toppings with a comma.)');
+let toppingsOrder = prompt ('What toppings would you like? (Separate multiple toppings with a comma)');
 
-let condimentsOrder = prompt ('What sort of condiments would you like? (Separate multiple toppings with a comma.)');
+let condimentsOrder = prompt ('What sort of condiments would you like? (Separate multiple toppings with a comma)');
 
 // Step Two ////////////////////////////////////////////////////////////
 //
@@ -48,16 +48,18 @@ let subtotal = prices.sandwich + meatCost + toppingCost + condimentCost;
 let waStateTaxRate = 0.065;
 let orderTax = subtotal * waStateTaxRate;
 
-// TODO: Calculate `totalPrice` by adding `subtotal` and `orderTax`.
+// Total price
 let totalPrice = subtotal + orderTax;
+
+//Suggested tips
+let total15Tip = totalPrice *.15;
+let total18Tip = totalPrice *.18;
+let total20Tip = totalPrice *.20;
 
 
 // Step Three //////////////////////////////////////////////////////////
 //
-// TODO: Now that we've calculated all the values, insert them into this
-// template literal using proper expression tags. Note that we must provide
-// all of the info the user gave us to confirm the order, and then we must also
-// provide the cost information so the user understands their bill.
+// Cost information for customer
 
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
@@ -75,6 +77,10 @@ let receiptTemplate = `
     <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class="text-right">Total: $${totalPrice.toFixed(2)}</p>
+    <p class="text-right">Suggested Tip</p>
+    <p class="text-right">15% tip = $${total15Tip.toFixed(2)}</p>
+    <p class="text-right">18% tip = $${total18Tip.toFixed(2)}</p>
+    <p class="text-right">20% tip = $${total20Tip.toFixed(2)}</p>
 `
 
 ///////////////////////////////////////////////////////////////////////
